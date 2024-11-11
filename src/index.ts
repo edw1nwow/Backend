@@ -14,8 +14,8 @@ app.use(parserMiddleware)
 
 
 
-app.use('products', productsRouter)
-app.use('addresses', adressesRouter)
+app.use('/products', productsRouter)
+app.use('/addresses', adressesRouter)
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
